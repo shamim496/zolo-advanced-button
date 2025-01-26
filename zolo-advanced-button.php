@@ -38,10 +38,10 @@ class ZoloAdvancedButton {
     }
 
     private function define_constants() {
-        define('ZOLO_ADVANCED_BUTTON_EDITOR_FILE', __FILE__);
-        define('ZOLO_ADVANCED_BUTTON_EDITOR_VERSION', '1.0.0');
-        define('ZOLO_ADVANCED_BUTTON_EDITOR_DIR_PATH', plugin_dir_path(__FILE__));
-        define('ZOLO_ADVANCED_BUTTON_EDITOR_URL', plugin_dir_url(__FILE__));
+        define('ZOLO_ADVANCED_BUTTON_FILE', __FILE__);
+        define('ZOLO_ADVANCED_BUTTON_VERSION', '1.0.0');
+        define('ZOLO_ADVANCED_BUTTON_DIR_PATH', plugin_dir_path(__FILE__));
+        define('ZOLO_ADVANCED_BUTTON_URL', plugin_dir_url(__FILE__));
     }
 
     private function init_hooks() {
@@ -53,7 +53,7 @@ class ZoloAdvancedButton {
         }
     }
     private function include_files() {
-        $includes_dir = ZOLO_ADVANCED_BUTTON_EDITOR_DIR_PATH . 'includes/';
+        $includes_dir = ZOLO_ADVANCED_BUTTON_DIR_PATH . 'includes/';
         $files = ['SingletonTrait.php', 'StyleGenerator.php'];
 
         foreach ($files as $file) {
@@ -67,7 +67,7 @@ class ZoloAdvancedButton {
     public function enqueue_editor_assets() {
         if (is_admin()) {
             $asset_path = __DIR__ . '/dist/zoloLibrary.asset.php';
-            $args = file_exists($asset_path) ? require $asset_path : ['dependencies' => [], 'version' => ZOLO_ADVANCED_BUTTON_EDITOR_VERSION];
+            $args = file_exists($asset_path) ? require $asset_path : ['dependencies' => [], 'version' => ZOLO_ADVANCED_BUTTON_VERSION];
             wp_enqueue_style('zololibrary-style', plugins_url('dist/zoloLibrary.css', __FILE__), [], $args['version']);
             wp_enqueue_script('zololibrary-script', plugins_url('dist/zoloLibrary.js', __FILE__), $args['dependencies'], $args['version'], true);
         }
@@ -86,7 +86,7 @@ class ZoloAdvancedButton {
     }
 
     public function register_blocks() {
-        $dist_dir = ZOLO_ADVANCED_BUTTON_EDITOR_DIR_PATH . 'dist/';
+        $dist_dir = ZOLO_ADVANCED_BUTTON_DIR_PATH . 'dist/';
         foreach (scandir($dist_dir) as $name) {
             if (!str_contains($name, '.')) {
                 register_block_type($dist_dir . $name);
