@@ -9,9 +9,10 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+The **Advanced Button** block lets you design stylish, customizable WordPress buttons with layout controls, pre-made styles, and integrated icons.
+
 == Description ==
 
-The **Advanced Button** block lets you design stylish, customizable WordPress buttons with layout controls, pre-made styles, and integrated icons.
 
 == Installation ==
 
