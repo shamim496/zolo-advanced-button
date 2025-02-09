@@ -70,8 +70,8 @@ No. With this plugin, you will actually replace all popular page builder plugins
 
 == Screenshots ==
 
-1. **Advanced Button Interface** - The interactive Advanced Button that engages visitors.
-2. **Settings Page** - Configure your Advanced Button settings for better customization.
+1. **Advanced Button Interface** - The interactive advanced button that engages visitors.
+2. **Settings Page** - Configure your advanced button settings for better customization.
 3. **Responsive Design** - The plugin works seamlessly on both desktop and mobile devices
 
 == Changelog ==
