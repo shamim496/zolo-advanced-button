@@ -31,8 +31,6 @@ The **Advanced Button** block lets you design stylish, customizable WordPress bu
 3. Select the Advanced Button zip file and proceed to install
 4. Activate Advanced Button.
 
-
-
 == Upgrade Notice ==
 
 There are no requirement for upgrade notice. Just click the update button and updated the plugin.
