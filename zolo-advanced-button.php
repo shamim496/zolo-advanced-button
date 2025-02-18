@@ -52,6 +52,7 @@ class ZoloAdvancedButton {
             add_action('wp_enqueue_scripts', [$this, 'enqueue_front_scripts']);
         }
     }
+    
     private function include_files() {
         $includes_dir = ZOLO_ADVANCED_BUTTON_DIR_PATH . 'includes/';
         $files = ['SingletonTrait.php', 'StyleGenerator.php'];
@@ -72,6 +73,7 @@ class ZoloAdvancedButton {
             wp_enqueue_script('zololibrary-script', plugins_url('dist/zoloLibrary.js', __FILE__), $args['dependencies'], $args['version'], true);
         }
     }
+
     public function enqueue_front_scripts() {
         if (!is_admin()) {
             // Enqueue front end scripts
