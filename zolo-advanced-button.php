@@ -14,10 +14,6 @@
  */
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
-// Check if ZoloBlocks is active, deactivate this plugin if true
-if (in_array('zoloblocks/zoloblocks.php', apply_filters('active_plugins', get_option('active_plugins'))) || (is_multisite() && array_key_exists('zoloblocks/zoloblocks.php', get_site_option('active_sitewide_plugins', array())))) {
-    return; // Exit the plugin if ZoloBlocks is active
-}
 
 class ZoloAdvancedButton {
     private static $instance = null;
@@ -48,11 +44,8 @@ class ZoloAdvancedButton {
         add_action('enqueue_block_assets', [$this, 'enqueue_editor_assets']);
         add_filter('block_categories_all', [$this, 'add_custom_block_category']);
         add_action('init', [$this, 'register_blocks']);
-        if (!is_admin()) {
-            add_action('wp_enqueue_scripts', [$this, 'enqueue_front_scripts']);
-        }
     }
-    
+
     private function include_files() {
         $includes_dir = ZOLO_ADVANCED_BUTTON_DIR_PATH . 'includes/';
         $files = ['SingletonTrait.php', 'StyleGenerator.php'];
@@ -74,11 +67,6 @@ class ZoloAdvancedButton {
         }
     }
 
-    public function enqueue_front_scripts() {
-        if (!is_admin()) {
-            // Enqueue front end scripts
-        }
-    }
 
     public function add_custom_block_category($categories) {
         return array_merge(

@@ -3,7 +3,7 @@ Contributors: bdthemes
 Donate link: http://bdthemes.com/
 Tags: block-editor, gutenberg blocks, gutenberg plugin, Advanced Button, Button
 Requires at least: 6.1
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
