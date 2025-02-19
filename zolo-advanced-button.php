@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Zolo Advanced Button
  * Description:       A collection of responsive blocks for the WordPress block editor.
- * Requires at least: 6.0
+ * Requires at least: 6.1
  * Requires PHP:      7.4
  * Version:           1.0.0
  * Author:            BdThemes
