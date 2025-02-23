@@ -1,14 +1,14 @@
 <?php
 
-namespace zoloLibrary\Includes;
+namespace ZoloLibrary\Includes;
 
-use zoloLibrary\Includes\SingletonTrait;
+use ZoloLibrary\Includes\SingletonTrait;
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-if (!class_exists('zoloLibrary\Includes\StyleGenerator')) {
+if (!class_exists('ZoloLibrary\Includes\StyleGenerator')) {
 
     class StyleGenerator {
         use SingletonTrait;
@@ -64,7 +64,7 @@ if (!class_exists('zoloLibrary\Includes\StyleGenerator')) {
         }
 
         public function output_dynamic_styles() {
-            wp_enqueue_style('zolo-block-inline-styles', true);
+            wp_enqueue_style('zolo-block-inline-styles', $args['version'] true);
             if (!empty($this->dynamic_styles)) {
                 wp_add_inline_style('zolo-block-inline-styles', $this->dynamic_styles);
             }
