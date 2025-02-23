@@ -1,6 +1,6 @@
 <?php
 
-namespace ZoloLibrary\Includes;
+namespace zolo_library\Includes;
 
 if (!trait_exists(__NAMESPACE__ . '\SingletonTrait')) {
 

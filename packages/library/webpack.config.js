@@ -18,11 +18,11 @@ module.exports = {
   ...defaultConfig,
   target: "web",
   entry: {
-    zoloLibrary: "./index.ts",
+    zolo_library: "./index.ts",
   },
   output: {
     libraryTarget: "var",
-    library: ["zoloLibrary"],
+    library: ["zolo_library"],
     path: path.resolve(outputPath),
   },
   module: {

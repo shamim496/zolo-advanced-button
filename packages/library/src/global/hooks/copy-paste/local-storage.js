@@ -1,19 +1,19 @@
 const getZoloEditorLocalStorage = (key = false) => {
-    if (!window.localStorage) {
-        return null;
-    }
-
-    if (!key) {
-        return localStorage;
-    }
-
-    const zoloLibrarytate = localStorage.getItem(key);
-
-    if (zoloLibrarytate) {
-        return JSON.parse(zoloLibrarytate);
-    }
-
+  if (!window.localStorage) {
     return null;
+  }
+
+  if (!key) {
+    return localStorage;
+  }
+
+  const zolo_librarytate = localStorage.getItem(key);
+
+  if (zolo_librarytate) {
+    return JSON.parse(zolo_librarytate);
+  }
+
+  return null;
 };
 
 export default getZoloEditorLocalStorage;

@@ -50,15 +50,7 @@ module.exports = {
         }
       },
     }),
-    // new FileManagerPlugin({
-    //   events: {
-    //     onEnd: {
-    //       copy: [...vendorFiles],
-    //     },
-    //   },
-    //   runTasksInSeries: true,
-    //   runOnceInWatchMode: false,
-    // }),
+  
     new RtlCssPlugin({
       // filename: "[name].rtl.css", // Output RTL file with this name
       filename: (pathData) => {

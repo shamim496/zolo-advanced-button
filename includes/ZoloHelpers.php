@@ -11,10 +11,10 @@
  * @category Class
  */
 
-namespace ZoloLibrary\Includes;
+namespace zolo_library\Includes;
 
 use mysql_xdevapi\Statement;
-use ZoloLibrary\Includes\SingletonTrait;
+use zolo_library\Includes\SingletonTrait;
 
 // Exit if accessed directly.
 if (! defined('ABSPATH')) {

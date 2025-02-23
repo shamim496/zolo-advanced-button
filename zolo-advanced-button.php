@@ -14,6 +14,10 @@
  */
 
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
+// Check if ZoloBlocks is active, deactivate this plugin if true
+if (in_array('zoloblocks/zoloblocks.php', apply_filters('active_plugins', get_option('active_plugins'))) || (is_multisite() && array_key_exists('zoloblocks/zoloblocks.php', get_site_option('active_sitewide_plugins', array())))) {
+    return; // Exit the plugin if ZoloBlocks is active
+}
 
 class ZoloAdvancedButton {
     private static $instance = null;
@@ -60,10 +64,10 @@ class ZoloAdvancedButton {
 
     public function enqueue_editor_assets() {
         if (is_admin()) {
-            $asset_path = __DIR__ . '/dist/zoloLibrary.asset.php';
+            $asset_path = __DIR__ . '/dist/zolo_library.asset.php';
             $args = file_exists($asset_path) ? require $asset_path : ['dependencies' => [], 'version' => ZOLO_ADVANCED_BUTTON_VERSION];
-            wp_enqueue_style('zololibrary-style', plugins_url('dist/zoloLibrary.css', __FILE__), [], $args['version']);
-            wp_enqueue_script('zololibrary-script', plugins_url('dist/zoloLibrary.js', __FILE__), $args['dependencies'], $args['version'], true);
+            wp_enqueue_style('zolo-library-style', plugins_url('dist/zolo_library.css', __FILE__), [], $args['version']);
+            wp_enqueue_script('zolo-library-script', plugins_url('dist/zolo_library.js', __FILE__), $args['dependencies'], $args['version'], true);
         }
     }
 
