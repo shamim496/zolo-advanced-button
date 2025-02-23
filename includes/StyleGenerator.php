@@ -1,14 +1,14 @@
 <?php
 
-namespace zolo_library\Includes;
+namespace zoloLibrary\Includes;
 
-use zolo_library\Includes\SingletonTrait;
+use zoloLibrary\Includes\SingletonTrait;
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-if (!class_exists('zolo_library\Includes\StyleGenerator')) {
+if (!class_exists('zoloLibrary\Includes\StyleGenerator')) {
 
     class StyleGenerator {
         use SingletonTrait;

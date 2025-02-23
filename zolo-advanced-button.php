@@ -64,10 +64,10 @@ class ZoloAdvancedButton {
 
     public function enqueue_editor_assets() {
         if (is_admin()) {
-            $asset_path = __DIR__ . '/dist/zolo_library.asset.php';
+            $asset_path = __DIR__ . '/dist/zoloLibrary.asset.php';
             $args = file_exists($asset_path) ? require $asset_path : ['dependencies' => [], 'version' => ZOLO_ADVANCED_BUTTON_VERSION];
-            wp_enqueue_style('zolo-library-style', plugins_url('dist/zolo_library.css', __FILE__), [], $args['version']);
-            wp_enqueue_script('zolo-library-script', plugins_url('dist/zolo_library.js', __FILE__), $args['dependencies'], $args['version'], true);
+            wp_enqueue_style('zolo-library-style', plugins_url('dist/zoloLibrary.css', __FILE__), [], $args['version']);
+            wp_enqueue_script('zolo-library-script', plugins_url('dist/zoloLibrary.js', __FILE__), $args['dependencies'], $args['version'], true);
         }
     }
 

@@ -7,10 +7,10 @@ const getZoloEditorLocalStorage = (key = false) => {
     return localStorage;
   }
 
-  const zolo_librarytate = localStorage.getItem(key);
+  const zoloLibrarytate = localStorage.getItem(key);
 
-  if (zolo_librarytate) {
-    return JSON.parse(zolo_librarytate);
+  if (zoloLibrarytate) {
+    return JSON.parse(zoloLibrarytate);
   }
 
   return null;
