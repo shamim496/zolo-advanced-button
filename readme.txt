@@ -1,9 +1,9 @@
 === Zolo Advanced Button ===
-Contributors: shamim496, selimmw, bdthemes
+Contributors: bdthemes
 Donate link: http://bdthemes.com/
 Tags: block-editor, gutenberg blocks, gutenberg plugin, Advanced Button, Button
 Requires at least: 6.1
-Tested up to: 6.7.2
+Tested up to: 6.7
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -13,6 +13,11 @@ The **Advanced Button** block lets you design stylish, customizable WordPress bu
 
 == Description ==
 
+
+== Accessing the Source Code ==
+
+You can find the source code for this plugin on GitHub:
+[GitHub Repository Link] - https://github.com/shamim496/zolo-advanced-button.git
 
 == Installation ==
 
@@ -65,8 +70,8 @@ Most certainly all WordPress themes are compatible with the Zolo Blocks framewor
 = What if I update to the Premium version? =
 If you upgrade to the pro plugin version, you will unlock more unique features and customizations. Additionally, you will be able to receive personalized support from team BdThemes.
 
-= Do I need any page builder (such as Elementor/Divi) to use it? =
-No. With this plugin, you will actually replace all popular page builder plugins. On top of that, you can enjoy a similar yet faster and more robust customization experience in the Gutenberg environment.
+= Do I need any page builder like Elementor or Divi to use this plugin? =
+No, this plugin is built specifically for the Gutenberg editor and eliminates the need for third-party page builders.
 
 == Screenshots ==
 
