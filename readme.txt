@@ -1,5 +1,5 @@
 === Zolo Advanced Button ===
-Contributors: bdthemes
+Contributors: shamim496, selimmw, bdthemes
 Donate link: http://bdthemes.com/
 Tags: block-editor, gutenberg blocks, gutenberg plugin, Advanced Button, Button
 Requires at least: 6.1
