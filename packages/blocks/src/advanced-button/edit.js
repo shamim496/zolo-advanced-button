@@ -64,7 +64,7 @@ export default function Edit(props) {
                                 className={`zolo-button-content`}
                                 value={label}
                                 onChange={(text) => setAttributes({ label: text })}
-                                placeholder={__('Button Text', 'zoloblocks')}
+                                placeholder={__('Button Text', 'zolo-advanced-button')}
                                 allowedFormats={[]}
                             />
                         )}
