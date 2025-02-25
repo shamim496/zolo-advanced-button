@@ -6,7 +6,7 @@
   "keywords": ["button", "advanced", "cta", "link", "transition", "animation"],
   "description": "Use stylish button transitions for enhanced engagement.",
   "apiVersion": 3,
-  "textdomain": "zoloblocks",
+  "textdomain": "zolo-advanced-button",
   "example": {
     "attributes": {
       "preview": true

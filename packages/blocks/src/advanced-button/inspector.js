@@ -123,39 +123,39 @@ function Inspector(props) {
         generalTab={
           <>
             <ZoloPanelBody
-              title={__("General", "zoloblocks")}
+              title={__("General", "zolo-advanced-button")}
               panelProps={props}
               firstOpen={true}
             >
               <SelectControl
-                label={__("Styles", "zoloblocks")}
+                label={__("Styles", "zolo-advanced-button")}
                 value={preset}
                 options={applyFilters("zolo.advancedButton.presets", PRESETS)}
                 onChange={(value) => onPresetChange(value)}
               />
 
               <ResAlignmentControl
-                label={__("Alignment", "zoloblocks")}
+                label={__("Alignment", "zolo-advanced-button")}
                 controlName={BUTTON_ALIGNMENT}
                 requiredProps={requiredProps}
                 alignOptions={TEXT_ALIGN_OPTIONS}
               />
             </ZoloPanelBody>
             <ZoloPanelBody
-              title={__("Content", "zoloblocks")}
+              title={__("Content", "zolo-advanced-button")}
               panelProps={props}
             >
               {iconType !== "iconOnly" && (
                 <TextControl
-                  label={__("Text", "zoloblocks")}
+                  label={__("Text", "zolo-advanced-button")}
                   onChange={(value) => setAttributes({ label: value })}
                   value={label}
-                  placeholder={__("label..", "zoloblocks")}
+                  placeholder={__("label..", "zolo-advanced-button")}
                 />
               )}
               <div className="zolo-flex-row-control-tab">
                 <IconicBtnGroup
-                  label={__("Icon", "zoloblocks")}
+                  label={__("Icon", "zolo-advanced-button")}
                   value={iconType}
                   onChange={(value) =>
                     setAttributes({
@@ -166,14 +166,14 @@ function Inspector(props) {
                 />
               </div>
               <LinkControl
-                label={__("URL", "zoloblocks")}
+                label={__("URL", "zolo-advanced-button")}
                 value={link}
                 onChange={(value) => setAttributes({ link: value })}
               />
               {iconType !== "none" && (
                 <Fragment>
                   <ZoloIconPicker
-                    label={__("Select Icon", "zoloblocks")}
+                    label={__("Select Icon", "zolo-advanced-button")}
                     value={icon}
                     onChange={(value) => {
                       setAttributes({
@@ -195,7 +195,7 @@ function Inspector(props) {
                             preset === "button-3"))) && (
                         <>
                           <IconicBtnGroup
-                            label={__("Icon Position", "zoloblocks")}
+                            label={__("Icon Position", "zolo-advanced-button")}
                             value={iconPosition}
                             onChange={(value) =>
                               setAttributes({
@@ -218,13 +218,13 @@ function Inspector(props) {
                   {applyFilters(
                     "zolo.advancedButton.animationPanel",
                     <ZoloPanelBody
-                      title={__("Icon Animation", "zoloblocks")}
+                      title={__("Icon Animation", "zolo-advanced-button")}
                       panelProps={props}
                       isPro={true}
                       isDisabled={true}
                     >
                       <SelectControl
-                        label={__("Icon Animation", "zoloblocks")}
+                        label={__("Icon Animation", "zolo-advanced-button")}
                         value={iconAnimation}
                         options={ICON_ANIMATIONS}
                         onChange={(value) =>
@@ -240,7 +240,7 @@ function Inspector(props) {
         styleTab={
           <>
             <ZoloPanelBody
-              title={__("Button", "zoloblocks")}
+              title={__("Button", "zolo-advanced-button")}
               panelProps={props}
               firstOpen={true}
               stylePanel={true}
@@ -249,7 +249,7 @@ function Inspector(props) {
                 normalComponents={
                   <>
                     <ColorControl
-                      label={__("Color", "zoloblocks")}
+                      label={__("Color", "zolo-advanced-button")}
                       color={textColor}
                       onChange={(value) =>
                         setAttributes({
@@ -258,7 +258,7 @@ function Inspector(props) {
                       }
                     />
                     <TypographyDropdown
-                      label={__("Typography", "zoloblocks")}
+                      label={__("Typography", "zolo-advanced-button")}
                       typoPrefixConstant={BUTTON_TYPOGRAPHY}
                       requiredProps={requiredProps}
                       max={36}
@@ -270,14 +270,14 @@ function Inspector(props) {
                       noMainBGImg={false}
                     />
                     <ResDimensionsControl
-                      label={__("Padding", "zoloblocks")}
+                      label={__("Padding", "zolo-advanced-button")}
                       controlName={BUTTON_PADDING}
                       requiredProps={requiredProps}
                       forBorderRadius={false}
                     />
                     <CardDivider />
                     <BorderControl
-                      label={__("Border", "zoloblocks")}
+                      label={__("Border", "zolo-advanced-button")}
                       controlName={BUTTON_BORDER}
                       requiredProps={requiredProps}
                     />
@@ -288,7 +288,7 @@ function Inspector(props) {
                       />
                     )}
                     <ResDimensionsControl
-                      label={__("Border Radius", "zoloblocks")}
+                      label={__("Border Radius", "zolo-advanced-button")}
                       controlName={BUTTON_BORDER_RADIUS}
                       requiredProps={requiredProps}
                       forBorderRadius={true}
@@ -298,7 +298,7 @@ function Inspector(props) {
                 hoverComponents={
                   <>
                     <ColorControl
-                      label={__("Color", "zoloblocks")}
+                      label={__("Color", "zolo-advanced-button")}
                       color={textHoverColor}
                       onChange={(value) =>
                         setAttributes({
@@ -317,7 +317,7 @@ function Inspector(props) {
                       </>
                     )}
                     <ColorControl
-                      label={__("Border Color", "zoloblocks")}
+                      label={__("Border Color", "zolo-advanced-button")}
                       color={borderHoverColor}
                       onChange={(value) =>
                         setAttributes({
@@ -336,7 +336,7 @@ function Inspector(props) {
             </ZoloPanelBody>
             {iconType !== "none" && (
               <ZoloPanelBody
-                title={__("Icon", "zoloblocks")}
+                title={__("Icon", "zolo-advanced-button")}
                 panelProps={props}
                 stylePanel={true}
               >
@@ -344,7 +344,7 @@ function Inspector(props) {
                   normalComponents={
                     <>
                       <ColorControl
-                        label={__("Color", "zoloblocks")}
+                        label={__("Color", "zolo-advanced-button")}
                         color={iconColor}
                         onChange={(value) =>
                           setAttributes({
@@ -355,7 +355,7 @@ function Inspector(props) {
                       {iconType !== "none" && (
                         <Fragment>
                           <ResRangeControl
-                            label={__("Size", "zoloblocks")}
+                            label={__("Size", "zolo-advanced-button")}
                             controlName={ICON_SIZE}
                             requiredProps={requiredProps}
                             min={0}
@@ -364,7 +364,7 @@ function Inspector(props) {
                           />
                           {iconType !== "iconOnly" && (
                             <ResRangeControl
-                              label={__("Gap", "zoloblocks")}
+                              label={__("Gap", "zolo-advanced-button")}
                               controlName={ICON_TEXT_SPACING}
                               requiredProps={requiredProps}
                               min={0}
@@ -377,7 +377,7 @@ function Inspector(props) {
                       <CardDivider />
 
                       <ColorControl
-                        label={__("Background", "zoloblocks")}
+                        label={__("Background", "zolo-advanced-button")}
                         color={iconBg}
                         onChange={(value) =>
                           setAttributes({
@@ -386,19 +386,19 @@ function Inspector(props) {
                         }
                       />
                       <ResDimensionsControl
-                        label={__("Padding", "zoloblocks")}
+                        label={__("Padding", "zolo-advanced-button")}
                         controlName={ICON_PADDING}
                         requiredProps={requiredProps}
                         forBorderRadius={false}
                       />
                       <CardDivider />
                       <BorderControl
-                        label={__("Border", "zoloblocks")}
+                        label={__("Border", "zolo-advanced-button")}
                         controlName={ICON_BORDER}
                         requiredProps={requiredProps}
                         hoverControl={
                           <ColorControl
-                            label={__("Border Color", "zoloblocks")}
+                            label={__("Border Color", "zolo-advanced-button")}
                             color={iconBorderHoverColor}
                             onChange={(value) =>
                               setAttributes({
@@ -409,12 +409,12 @@ function Inspector(props) {
                         }
                       />
                       <BoxShadowControl
-                        label={__("Box Shadow", "zoloblocks")}
+                        label={__("Box Shadow", "zolo-advanced-button")}
                         controlName={ICON_BOX_SHADOW}
                         requiredProps={requiredProps}
                       />
                       <ResDimensionsControl
-                        label={__("Border Radius", "zoloblocks")}
+                        label={__("Border Radius", "zolo-advanced-button")}
                         nBg
                         controlName={ICON_BORDER_RADIUS}
                         requiredProps={requiredProps}
@@ -425,7 +425,7 @@ function Inspector(props) {
                   hoverComponents={
                     <>
                       <ColorControl
-                        label={__("Color", "zoloblocks")}
+                        label={__("Color", "zolo-advanced-button")}
                         color={iconHoverColor}
                         onChange={(value) =>
                           setAttributes({
@@ -435,7 +435,7 @@ function Inspector(props) {
                       />
 
                       <ColorControl
-                        label={__("Background", "zoloblocks")}
+                        label={__("Background", "zolo-advanced-button")}
                         color={iconHoverBg}
                         onChange={(value) =>
                           setAttributes({
@@ -454,7 +454,7 @@ function Inspector(props) {
             )}
             {preset !== "" && preset !== "button-2" && (
               <ZoloPanelBody
-                title={__("Preset Style", "zoloblocks")}
+                title={__("Preset Style", "zolo-advanced-button")}
                 panelProps={props}
                 stylePanel={true}
               >
@@ -482,7 +482,7 @@ function Inspector(props) {
                       normalComponents={
                         <>
                           <ColorControl
-                            label={__("Shadow Color", "zoloblocks")}
+                            label={__("Shadow Color", "zolo-advanced-button")}
                             color={
                               presetFourStyles && presetFourStyles.shadowColor
                             }
@@ -496,7 +496,7 @@ function Inspector(props) {
                             }
                           />
                           <ResRangeControl
-                            label={__("Shadow Width", "zoloblocks")}
+                            label={__("Shadow Width", "zolo-advanced-button")}
                             controlName={PF_SWIDTH}
                             requiredProps={requiredProps}
                             min={1}
@@ -507,7 +507,7 @@ function Inspector(props) {
                       hoverComponents={
                         <>
                           <ColorControl
-                            label={__("Text Color", "zoloblocks")}
+                            label={__("Text Color", "zolo-advanced-button")}
                             color={
                               presetFourStyles && presetFourStyles.textColor
                             }
@@ -521,7 +521,7 @@ function Inspector(props) {
                             }
                           />
                           <ColorControl
-                            label={__("Text Shadow Color", "zoloblocks")}
+                            label={__("Text Shadow Color", "zolo-advanced-button")}
                             color={
                               presetFourStyles &&
                               presetFourStyles.textShadowColor
@@ -537,7 +537,7 @@ function Inspector(props) {
                           />
                           <CardDivider />
                           <ColorControl
-                            label={__("Overlay Background", "zoloblocks")}
+                            label={__("Overlay Background", "zolo-advanced-button")}
                             color={
                               presetFourStyles && presetFourStyles.colorOne
                             }
@@ -558,12 +558,12 @@ function Inspector(props) {
                 {preset === "button-5" && (
                   <Fragment>
                     <BorderControl
-                      label={__("Border", "zoloblocks")}
+                      label={__("Border", "zolo-advanced-button")}
                       controlName={PFV_BORDER}
                       requiredProps={requiredProps}
                     />
                     <ResDimensionsControl
-                      label={__("Border Radius", "zoloblocks")}
+                      label={__("Border Radius", "zolo-advanced-button")}
                       controlName={PFV_BORDER_RADIUS}
                       requiredProps={requiredProps}
                       forBorderRadius={true}
@@ -573,7 +573,7 @@ function Inspector(props) {
                 {preset === "button-6" && (
                   <Fragment>
                     <ColorControl
-                      label={__("Shadow Color", "zoloblocks")}
+                      label={__("Shadow Color", "zolo-advanced-button")}
                       color={presetSixStyle && presetSixStyle}
                       onChange={(value) =>
                         setAttributes({
@@ -586,7 +586,7 @@ function Inspector(props) {
                 {preset === "button-7" && (
                   <Fragment>
                     <ColorControl
-                      label={__("Shadow Background", "zoloblocks")}
+                      label={__("Shadow Background", "zolo-advanced-button")}
                       color={presetSevenStyles && presetSevenStyles.bgColor}
                       onChange={(value) =>
                         setAttributes({
@@ -599,12 +599,12 @@ function Inspector(props) {
                     />
                     <CardDivider />
                     <BorderControl
-                      label={__("Border", "zoloblocks")}
+                      label={__("Border", "zolo-advanced-button")}
                       controlName={PS_BORDER}
                       requiredProps={requiredProps}
                     />
                     <ResDimensionsControl
-                      label={__("Border Radius", "zoloblocks")}
+                      label={__("Border Radius", "zolo-advanced-button")}
                       controlName={PS_BORDER_RADIUS}
                       requiredProps={requiredProps}
                       forBorderRadius={true}
@@ -621,12 +621,12 @@ function Inspector(props) {
                     />
                     <CardDivider />
                     <BorderControl
-                      label={__("Border", "zoloblocks")}
+                      label={__("Border", "zolo-advanced-button")}
                       controlName={PSE_BORDER}
                       requiredProps={requiredProps}
                     />
                     <ResDimensionsControl
-                      label={__("Border Radius", "zoloblocks")}
+                      label={__("Border Radius", "zolo-advanced-button")}
                       controlName={PSE_BRADIUS}
                       requiredProps={requiredProps}
                       forBorderRadius={true}
@@ -637,7 +637,7 @@ function Inspector(props) {
                 {preset == "button-9" && (
                   <>
                     <ColorControl
-                      label={__("Star Color", "zoloblocks")}
+                      label={__("Star Color", "zolo-advanced-button")}
                       color={psStarColor}
                       onChange={(value) =>
                         setAttributes({
@@ -712,12 +712,12 @@ function Inspector(props) {
                   <rect width={100} height={100} style={{ fill: "none" }} />
                 </svg>
 
-                <p>Get Zoloblocks for advanced control and extra features.</p>
+                <p>Get zolo-advanced-button for advanced control and extra features.</p>
                 <a
-                  href="https://wordpress.org/plugins/zoloblocks/"
+                  href="https://wordpress.org/plugins/zolo-advanced-button/"
                   target="_blank"
                 >
-                  Go Zoloblocks
+                  Go zolo-advanced-button
                   <svg
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
