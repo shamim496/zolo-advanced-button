@@ -712,12 +712,12 @@ function Inspector(props) {
                   <rect width={100} height={100} style={{ fill: "none" }} />
                 </svg>
 
-                <p>Get zolo-advanced-button for advanced control and extra features.</p>
+                <p>Get Zoloblocks for advanced control and extra features.</p>
                 <a
                   href="https://wordpress.org/plugins/zolo-advanced-button/"
                   target="_blank"
                 >
-                  Go zolo-advanced-button
+                  Go Zoloblocks
                   <svg
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
