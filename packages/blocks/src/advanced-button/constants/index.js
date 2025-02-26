@@ -8,16 +8,16 @@ export const BLOCK_PREFIX = 'advanced-button';
 
 // Presets
 export const PRESETS = [
-    { label: __('Style 1', 'zolo-advanced-button'), value: '' },
-    { label: __('Style 2', 'zolo-advanced-button'), value: 'button-1' },
-    { label: __('Style 3', 'zolo-advanced-button'), value: 'button-2' },
-    { label: __('Style 4', 'zolo-advanced-button'), value: 'button-3' },
-    { label: __('Style 5', 'zolo-advanced-button'), value: 'button-4' },
-    { label: __('Style 6', 'zolo-advanced-button'), value: 'button-5' },
-    { label: __('Style 7', 'zolo-advanced-button'), value: 'button-6' },
-    { label: __('Style 8', 'zolo-advanced-button'), value: 'button-7' },
-    { label: __('Style 9', 'zolo-advanced-button'), value: 'button-8' },
-    { label: __('Style 10 (Pro)', 'zolo-advanced-button'), value: 'button-9', disabled: true },
+    { label: __('Style 1', 'zoloblocks'), value: '' },
+    { label: __('Style 2', 'zoloblocks'), value: 'button-1' },
+    { label: __('Style 3', 'zoloblocks'), value: 'button-2' },
+    { label: __('Style 4', 'zoloblocks'), value: 'button-3' },
+    { label: __('Style 5', 'zoloblocks'), value: 'button-4' },
+    { label: __('Style 6', 'zoloblocks'), value: 'button-5' },
+    { label: __('Style 7', 'zoloblocks'), value: 'button-6' },
+    { label: __('Style 8', 'zoloblocks'), value: 'button-7' },
+    { label: __('Style 9', 'zoloblocks'), value: 'button-8' },
+    { label: __('Style 10 (Pro)', 'zoloblocks'), value: 'button-9', disabled: true },
 ];
 
 /**
@@ -76,27 +76,27 @@ export const PSE_BG = 'pseBG';
 // Icon Animations
 export const ICON_ANIMATIONS = [
     {
-        label: __('Select Animation', 'zolo-advanced-button'),
+        label: __('Select Animation', 'zoloblocks'),
         value: '',
     },
     {
-        label: __('Animation 1', 'zolo-advanced-button'),
+        label: __('Animation 1', 'zoloblocks'),
         value: 'icon-animation-1',
     },
     {
-        label: __('Animation 2', 'zolo-advanced-button'),
+        label: __('Animation 2', 'zoloblocks'),
         value: 'icon-animation-2',
     },
     {
-        label: __('Animation 3', 'zolo-advanced-button'),
+        label: __('Animation 3', 'zoloblocks'),
         value: 'icon-animation-3',
     },
     {
-        label: __('Animation 4', 'zolo-advanced-button'),
+        label: __('Animation 4', 'zoloblocks'),
         value: 'icon-animation-4',
     },
     {
-        label: __('Animation 5', 'zolo-advanced-button'),
+        label: __('Animation 5', 'zoloblocks'),
         value: 'icon-animation-5',
     },
 ];
